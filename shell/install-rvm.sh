@@ -8,7 +8,7 @@ echo "Sourcing .profile"
 source ~/.profile
 
 echo "Installing Rails"
-gem install rails
+gem install rails --no-rdoc --no-ri 
 
 echo "Installing rmagick gem"
 gem install rmagick
