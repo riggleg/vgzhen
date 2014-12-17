@@ -70,7 +70,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, :path => "shell/install-rvm.sh",  :args => "stable", privileged: false
   config.vm.provision :shell, :path => "shell/mysql.sh",  :args => "", privileged: true
   config.vm.provision :shell, :path => "shell/apache.sh",  :args => "", privileged: true
+  config.vm.provision :shell, :path => "shell/php.sh",  :args => "", privileged: true
   config.vm.provision :shell, :path => "shell/jgenerator.sh",  :args => "", privileged: false
+  config.vm.provision :shell, :path => "shell/setup-drhespa.j3.sh",  :args => "", privileged: false
 
   # config.vm.provision "cfengine" do |cf|
   #   cf.am_policy_hub = true
