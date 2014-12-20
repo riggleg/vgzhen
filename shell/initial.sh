@@ -12,3 +12,5 @@ apt-get install git -y
 echo "Install libs needed for nokogiri"
 apt-get install libxslt-dev libxml2-dev -y
 
+echo "Install things needed for virtual box guest additions"
+apt-get install linux-headers-generic build-essential dkms -y
