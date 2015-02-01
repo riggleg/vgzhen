@@ -5,6 +5,7 @@ echo "create database joomla3_wrspb CHARACTER SET utf8 COLLATE utf8_general_ci;"
 mysql -u root -pyikes3479 joomla3_wrspb < /jgenerator3_setup/joomla3_wrspb.sql
 
 
+
 sudo usermod -a -G www-data vagrant
 
 sudo mkdir -p /var/www/vhosts/
