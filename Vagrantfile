@@ -50,7 +50,8 @@ Vagrant.configure(2) do |config|
   #   vb.gui = true
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
-  #   vb.customize ["modifyvm", :id, "--memory", "1024"]
+   vb.customize ["modifyvm", :id, "--memory", "1024"]
+
     vb.name = "ZhenGenerator"
    end
   #
@@ -61,6 +62,8 @@ Vagrant.configure(2) do |config|
   # automatically installed. For example, configure the host as a
   # policy server and optionally a policy file to run:
   #
+
+  config.vm.synced_folder "~/Dropbox/RubyProjects", "/home/vagrant/Dropbox/RubyProjects_All"
   config.vm.synced_folder "~/Dropbox/RubyProjects/JGenerator", "/home/vagrant/Dropbox/RubyProjects/JGenerator"
   config.vm.synced_folder "~/Dropbox/RubyProjects/JGenerator3", "/home/vagrant/Dropbox/RubyProjects/JGenerator3"
   config.vm.synced_folder "~/Dropbox/Projects", "/home/vagrant/Dropbox/Projects"
